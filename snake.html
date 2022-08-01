@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+
+        }
+        h1{
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            color:#001f3f;
+            font-family: sans-serif;
+
+        }
+        canvas{
+            
+            background-color: rgb(184, 169, 169);
+        }
+        .canvas{
+            position: relative;
+            box-shadow:  0px 5px 20px 0px rgba(0,0,0,0.3)
+        }
+        h2{
+            letter-spacing: 1px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #gameover{
+            display: none;
+            position: absolute;
+            top: 34%;
+            left: 32%;
+            letter-spacing: 4px;
+            z-index: 4;
+            }
+
+    
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+</head>
+<body>
+    <h1>Snake Game</h1>
+    <div class="canvas">
+    <canvas id="canvas" width="600" height="400"></canvas>
+    <h1 id="gameover">Game Over!</h1>
+    </div>
+    <div class="score">
+        <h2>Score :<span id="score-content"> 0 </span></h2>
+    </div>
+    <script src="snake.js"></script>
+</body>
+</html>
